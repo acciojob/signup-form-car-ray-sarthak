@@ -8,6 +8,50 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	<form action ="/submit">
+		<fieldset>
+			<label for="name">name</label>
+			<input type="text" minlength="3" maxlength="50" required id="name" placeholder="name">
+		</fieldset>
+		<fieldset>
+			<label for="email">email</label>
+			<input type="email" required id="email" placeholder="email">
+		</fieldset>
+		<fieldset>
+			<label for="gender">gender</label>
+			<input type="radio" name="gender" id="gender" value="m">
+			<label for="male">MALE</label>
+			<input type="radio" name="gender" id="gender" value="f">
+			<label for="female">FEMALE</label>
+		</fieldset>
+		<fieldset>
+			<label for="cars">Select Car</label><br>
+			<input type="checkbox" name ="cars" id="cars" value="b">
+			<label for="BMW">BMW</label><br>
+			<input type="checkbox" name ="cars" id="cars" value="a">
+			<label for="Audi">Audi</label><br>
+			<input type="checkbox" name ="cars" id="cars" value="m">
+			<label for="Mercedez">Mercedez</label><br>
+		</fieldset>
+		<fieldset>
+			<label for"age">age</label>
+			<input type="number" required id="age" placeholder="age" name="dob">
+		</fieldset>
+		<fieldset>
+			<label for="dob">dob</label>
+			<input type="date" required id="dob" name="dob">
+		</fieldset>
+		<fieldset>
+			<label for="phno">Phone no</label>
+			<input type="text" name=phno required id="phno" placeholder="xxx-xxx-xxxx">
+		</fieldset>
+		<fieldset>
+			<label for password>Enter Your Password</label>
+			<input type="password" required id="password" name="password" placeholder="Enter password">
+		</fieldset>
+		<button>Submit</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
