@@ -9,7 +9,7 @@
 <body>
 	<!-- the entire body must be written by student -->
 
-	<form action ="/submit">
+	<form action ="/submit" method="post">
 		<fieldset>
 			<label for="name">name</label>
 			<input type="text" minlength="3" maxlength="50" required id="name" placeholder="name">
@@ -26,8 +26,8 @@
 			<label for="female">FEMALE</label>
 		</fieldset>
 		<fieldset>
-			<label for="cars">Select Car</label><br>
-			<input type="checkbox" name ="cars" id="cars" value="b">
+			<label for="select#cars">Select Car</label><br>
+			<input type="checkbox" name ="cars" id="select#cars" value="b">
 			<label for="BMW">BMW</label><br>
 			<input type="checkbox" name ="cars" id="cars" value="a">
 			<label for="Audi">Audi</label><br>
@@ -35,7 +35,7 @@
 			<label for="Mercedez">Mercedez</label><br>
 		</fieldset>
 		<fieldset>
-			<label for"age">age</label>
+			<label for="age">age</label>
 			<input type="number" required id="age" placeholder="age" name="dob">
 		</fieldset>
 		<fieldset>
@@ -43,14 +43,16 @@
 			<input type="date" required id="dob" name="dob">
 		</fieldset>
 		<fieldset>
-			<label for="phno">Phone no</label>
-			<input type="text" name=phno required id="phno" placeholder="xxx-xxx-xxxx">
+			<label for="input#tel">Phone no</label>
+			<input type="tel" name=phno required id="input#tel" placeholder="xxx-xxx-xxxx">
 		</fieldset>
 		<fieldset>
-			<label for password>Enter Your Password</label>
+			<label for="password">Enter Your Password</label>
 			<input type="password" required id="password" name="password" placeholder="Enter password">
 		</fieldset>
-		<button>Submit</button>
+		<label for="tos">I agree to the TOS.</label>
+			<input type="checkbox" name="tos" required id="tos">
+		<button type="submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
